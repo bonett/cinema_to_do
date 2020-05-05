@@ -1,3 +1,3 @@
 class PersonSerializer < ActiveModel::Serializer
-  attributes :id, :name, :lastname, :created_at
+  attributes :id, :identification, :name, :lastname, :nickname, :created_at
 end
