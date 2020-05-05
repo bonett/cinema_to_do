@@ -36,7 +36,7 @@ module Api
                 render json: {}
             end
 
-			def assign_person
+            def assign_person
 				movie = Movie.find(params[:id])
 				person_id = params[:person_id]
 				person =  Person.find(person_id)
