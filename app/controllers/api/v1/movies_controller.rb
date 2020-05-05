@@ -31,6 +31,11 @@ module Api
                 end
             end
 
+            def destroy
+                @movie.destroy
+                render json: {}
+            end
+
 			def assign_person
 				movie = Movie.find(params[:id])
 				person_id = params[:person_id]
