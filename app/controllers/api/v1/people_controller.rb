@@ -38,7 +38,7 @@ module Api
             private
 
             def permit_params
-                params.require(:person).permit(:name, :last_name)
+                params.require(:person).permit(:identification, :name, :lastname, :nickname, :phone)
             end
 
             def find_person
